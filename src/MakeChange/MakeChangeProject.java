@@ -15,6 +15,7 @@ public class MakeChangeProject {
 		while (total != 000) {
 			CashRegister();
 		}
+		System.out.println("\nGoodbye");
 	}
 
 	public static void CashRegister() {
