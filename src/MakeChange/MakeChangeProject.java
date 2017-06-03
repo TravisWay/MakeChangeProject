@@ -44,11 +44,6 @@ public class MakeChangeProject {
 				System.out.println(tens + " ten dollar bills");
 			}
 
-			if (change % 2 >= 0) {
-				int twos = (int) change / 2;
-				change = change % 2;
-				System.out.println(twos + " Two dollar bills...Yes, this is two dollar bils");
-			}
 			if (change % 1 >= 0) {
 				int ones = (int) change / 1;
 				change = change % 1;
@@ -57,7 +52,7 @@ public class MakeChangeProject {
 
 		}
 
-		change = change * 100;
+		change = (change * 100)+(.5);
 
 		if (change < 1000) {
 
