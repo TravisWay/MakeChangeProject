@@ -1,5 +1,4 @@
 package MakeChange;
-
 import java.util.Scanner;
 
 public class MakeChangeProject {
