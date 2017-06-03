@@ -31,20 +31,25 @@ public class MakeChangeProject {
 		int quarters, dimes, nickels, pennnies;
 
 		if (change >= 1) {
-			if (change % 20 >= 0) {
+			if (change >= 20 && change % 20 >= 0) {
 				int twenties = (int) (change / 20);
 				change = change % 25;
 				System.out.println(twenties + " twenty dollar bills");
 
 			}
 
-			if (change % 10 >= 0) {
+			if (change >= 10 && change % 10 >= 0) {
 				int tens = (int) (change / 10);
 				change = change % 10;
 				System.out.println(tens + " ten dollar bills");
 			}
+			if (change >= 5 && change % 5 >= 0) {
+				int fives = (int) change / 5;
+				change = change % 5;
+				System.out.println(fives + " five dollar bills");
+			}
 
-			if (change % 1 >= 0) {
+			if (change >= 1 && change % 1 >= 0) {
 				int ones = (int) change / 1;
 				change = change % 1;
 				System.out.println(ones + " one dollar bils");
@@ -56,25 +61,25 @@ public class MakeChangeProject {
 
 		if (change < 1000) {
 
-			if (change % 25 >= 0) {
+			if (change >= 25 && change % 25 >= 0) {
 				quarters = (int) (change / 25);
 				change = change % 25;
 				System.out.println(quarters + " quarters");
 
 			}
 
-			if (change % 10 >= 0) {
+			if (change >= 10 && change % 10 >= 0) {
 				dimes = (int) (change / 10);
 				change = change % 10;
 				System.out.println(dimes + " dimes");
 			}
 
-			if (change % 5 >= 0) {
+			if (change >= 5 && change % 5 >= 0) {
 				nickels = (int) change / 5;
 				change = change % 5;
 				System.out.println(nickels + " nickels");
 			}
-			if (change % 1 >= 0) {
+			if (change >= 1 && change % 1 >= 0) {
 				pennnies = (int) change / 1;
 				change = change % 1;
 				System.out.println(pennnies + " pennies");
