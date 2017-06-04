@@ -6,4 +6,4 @@ The program will tell the user if not enough money was given to be tendered or i
 
 The program will ask the user for the next transaction information once the first transaction is complete. 
 
-The program will run until 000 is entered for the total or amount tendered.  
+The program will run until 0 is entered for the total or amount tendered.  
