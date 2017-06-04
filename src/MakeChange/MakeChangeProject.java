@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class MakeChangeProject {
 	// variables needed for each method
-	static double total = 0, tender, change;
+	static double total = 1, tender, change;
 	static final int twentybill = 20, tenbill = 10, fivebill = 5, onebill = 1, quarters = 25, dimes = 10, nickels = 5,
 			pennies = 1;
 	static Scanner input = new Scanner(System.in);
@@ -21,13 +21,13 @@ public class MakeChangeProject {
 		// Asks the user for total and saves it
 		System.out.println("How much was the total?");
 		total = input.nextDouble();
-		if (total == 0001) {
+		if (total == 000) {
 			return;
 		}
 		// Asks the user for the amount tendered and saves it
 		System.out.println("How much is being tendered?");
 		tender = input.nextDouble();
-		if (tender == 0001) {
+		if (tender == 000) {
 			return;
 		}
 		// If too little money is given, the user is prompted to enter again
